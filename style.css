@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F7;
+}
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a:link,a:visited {
+    text-decoration: none;
+    font-size:13px ;
+}
+a:hover {
+    text-decoration: underline;
+
+}
+.section {
+    height: 100vh;
+}
+.nav {
+    float: right;
+    display: flex;
+    margin-right: 18px;
+    margin-top: 18px;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.fa-bullhorn,.fa-chevron-down {
+    color: #aaaaaa;
+    padding-top: 12.5px;
+}
+.fa-chevron-down:hover {
+    color: #6D6D6D;
+
+}
+.fa-bullhorn:hover {
+    color: #6D6D6D;
+} 
+
+.fa-bars {
+    padding: 10px 15px;
+    color: #aaaaaa;
+}
+.fa-bars:hover{
+    color: #fff;
+    border-radius: 8px;
+    background-color:#6D6D6D ;
+    
+}
+
+
+
+.social__list {
+    display: none;
+}
+.settings__area {
+    display: none;
+}
+/* start main */
+.main {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+.group {
+    position: relative;
+}
+.main__logo img {
+    height: 250px;
+    width: 370px;
+    
+}
+.search__input input {
+    width: 95vw;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow:0px 1px 3px rgb(153, 152, 152);
+    
+}
+::-webkit-input-placeholder{
+    color: #AAAAAA;
+}
+.fa-search {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 20px;
+
+}
+.main__text h2 {
+    font-size: 30px;
+    margin-top: 35px;
+    
+}
+.main__text p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 0px 70px;
+}
+.privet__search {
+    position: relative;
+}
+.privet__list {
+    position: absolute;
+    justify-content: center;;
+
+    top: 50%;
+    right: 50%;
+    transform: translate(50% ,50%);
+    margin-top: -30px;
+    
+}
+.privet__item {
+    text-align: start;
+    padding: 8px 2px;
+    list-style-image: url(./logo__icon/rsz_right_arrow.png);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.button__star {
+    margin-top: 160px;
+}
+.button__1 input {
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: #5891F8;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.star__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.fa-star,.fa-star-half {
+    font-size: 8px;
+    
+}
+.star__rating p {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.last__text {
+    margin-top: 40px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+@media all and (min-width: 990px) {
+    .search__input input{
+        width: 45vw;
+    }
+    .privet__search {
+        position: relative;
+    }
+    .privet__list {
+        display:inline-flex;
+        gap: 40px;
+        width: 100%;
+         margin-top: 25px;
+    }
+    
+    
+}
+
+
